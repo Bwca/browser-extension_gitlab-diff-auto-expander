@@ -1,0 +1,19 @@
+{
+  "description": "The extention automatically expands all collapsed files when loading differences.",
+  "manifest_version": 2,
+  "name": "Gitlab auto-expander of collapsed files",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": {
+      "1": "icons/inactive.png"
+    },
+    "default_title": "Gitlab auto-expander"
+  },
+
+  "permissions": ["webRequest", "<all_urls>", "webRequestBlocking", "activeTab"],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
