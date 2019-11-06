@@ -1,3 +1,5 @@
+main();
+
 function listener(details) {
   let filter = browser.webRequest.filterResponseData(details.requestId);
 
@@ -26,7 +28,10 @@ function expandCollapsedFiles() {
     .then(onExecuted, onError);
 }
 
-browser.browserAction.onClicked.addListener(toggleWebRequestListener);
+function main() {
+  browser.browserAction.onClicked.addListener(toggleWebRequestListener);
+  toggleWebRequestListener();
+}
 
 function toggleWebRequestListener() {
   if (browser.webRequest.onBeforeRequest.hasListener(listener)) {

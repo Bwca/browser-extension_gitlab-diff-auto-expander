@@ -1,5 +1,5 @@
 {
-  "description": "The extention automatically expands all collapsed files when loading differences.",
+  "description": "The extention automatically expands all collapsed files when loading differences in file changes tab when viewing merge requests.",
   "manifest_version": 2,
   "name": "Gitlab auto-expander of collapsed files",
   "version": "1.0",
